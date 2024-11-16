@@ -3,7 +3,6 @@ from dbm import error
 
 # Task 2
 args = sys.argv
-print(args)
 if len(args) == 1:
     print("There where 0 arguments when 1 was expected")
     sys.exit()
@@ -12,7 +11,6 @@ file_name = args[1]
 try:
     file = open(file_name,"r")
     lines = file.readlines()
-    print(lines)
     for i in range(len(lines)):
         line = lines[i]
         words = line.split()
