@@ -10,6 +10,7 @@ def groups_of_3(nums: list[int]) -> list[list[int]]:
     index = 0
     while should_continue:
         sublist = []
+        sublist.pop()
         for i in range(3):
             if num_length > index:
                 sublist.append(nums[index])
